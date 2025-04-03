@@ -18,8 +18,8 @@ pygame.display.set_caption("board")
 
 def draw_board(board):
 
-    for row in range(rows):  # looping through each row (0 to 7)
-        for col in range(cols):  # looping through each column (0 to 7)
+    for row in range(rows):  # looping through each row (0 to 8)
+        for col in range(cols):  # looping through each column (0 to 8)
             color = white if (row + col) % 2 == 0 else black # using the remainder to determine the color
             pygame.draw.rect(board, color, (col * square_size, row * square_size, square_size, square_size))
 
